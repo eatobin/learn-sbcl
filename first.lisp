@@ -29,11 +29,13 @@
   (b 10))
 
 (eq 'foo 'foo)
+
 (eq 'foo 'bar)
 
 (expt 53 53)
 
 (/ 4 6)
+
 (/ 4.0 6)
 
 (princ "Tutti Frutti")
@@ -41,7 +43,9 @@
 (defparameter *ml* '(one two three four five))
 
 (cadr *ml*)
+
 (cadddr *ml*)
+
 (car *ml*)
 
 (cdr *ml*)
