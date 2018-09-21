@@ -90,3 +90,5 @@
 (when (oddp 6)
   (setf *number-was-odd* t)
   'odd-number)
+
+;; to page 56
