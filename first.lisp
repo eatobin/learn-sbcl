@@ -53,3 +53,40 @@
 (flet ((f ()
          88))
   (f))
+
+(cons 'chicken ())
+
+(cons 'chicken nil)
+
+(if '()
+    'i-am-true
+    'i-am-false)
+
+(if nil
+    'i-am-true
+    'i-am-false)
+
+(if t
+    'i-am-true
+    'i-am-false)
+
+(eq 1 1)
+
+(eq 1 2)
+
+(if (oddp 5)
+    'odd-number
+    (/ 1 0))
+
+(defvar *number-was-odd* nil)
+
+(if (oddp 5)
+    (progn (setf *number-was-odd* t)
+           'odd-number)
+    'even-number)
+
+*number-was-odd*
+
+(when (oddp 6)
+  (setf *number-was-odd* t)
+  'odd-number)
