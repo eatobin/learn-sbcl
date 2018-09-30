@@ -91,8 +91,6 @@
   (setf *number-was-odd* t)
   'odd-number)
 
-;; to page 56
-
 (defvar *arch-enemy* nil)
 (defun pudding-eater (person)
   (cond ((eq person 'henry) (setf *arch-enemy* 'stupid-lisp-alien)
@@ -105,3 +103,12 @@
 (pudding-eater 'johnny)
 (pudding-eater 'henry)
 (pudding-eater 'eric)
+
+(defun sum (n)
+  (let ((s 0))
+    (dotimes (i n s)
+      (incf s i))))
+
+(defun addn (n)
+  #'(lambda (x)
+      (+ x n)))
