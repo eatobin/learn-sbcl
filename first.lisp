@@ -112,3 +112,5 @@
 (defun addn (n)
   #'(lambda (x)
       (+ x n)))
+
+(or 33 44)
