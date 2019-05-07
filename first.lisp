@@ -42,8 +42,6 @@
 
 (defparameter *ml* '(one two three four five))
 
-(defparameter *test* 'test-er)
-
 (cadr *ml*)
 
 (cadddr *ml*)
