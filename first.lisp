@@ -114,3 +114,10 @@
       (+ x n)))
 
 (or 33 44)
+
+(cons :x nil)
+(list :x)
+(quote (:x))
+(car '(:x))
+(cdr '(:x))
+(cons :x (cons :y (cons :z nil)))
