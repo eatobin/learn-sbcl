@@ -121,3 +121,10 @@
 (car '(:x))
 (cdr '(:x))
 (cons :x (cons :y (cons :z nil)))
+
+(let ((our-list (list 1 2 3)))
+  (list
+   (cons 0 our-list)
+   (cons 1 our-list)
+   (cdr our-list)
+   our-list))
