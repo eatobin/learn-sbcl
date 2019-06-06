@@ -15,3 +15,8 @@
 (lat? '())
 (lat? '(8))
 (lat? '(8 (8)))
+
+(member? :a '())
+(member? :a '(:a))
+(member? :a '(:ax))
+(member? :a '(:ax :a))
