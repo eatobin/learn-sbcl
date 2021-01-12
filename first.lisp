@@ -58,6 +58,8 @@
 
 (cons 'chicken nil)
 
+(cons 'chicken 'soup)
+
 (if '()
     'i-am-true
     'i-am-false)
